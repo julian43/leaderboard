@@ -1,0 +1,27 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Players List</h1>
+      {{#if selectedPlayer}}
+        <h2 class="selected-display">Selected Player: {{selectedPlayer.name}}</h2>
+      {{/if}}
+    </header>
+  </div>
+
+  <br/>
+  <ul>
+    {{> leaderboard}}
+
+  </ul>
+  {{#if selectedPlayer}}
+    <button class="increment">Give 5 Points </button>
+    <button class="decrement">Take 5 Points </button>
+  {{/if}}
+</body>
+
+<template name="leaderboard">
+  {{#each player}}
+   <li class='player  {{selectedClass}}'> {{name}} : {{score}} </li>
+  {{/each}}
+
+</template>
