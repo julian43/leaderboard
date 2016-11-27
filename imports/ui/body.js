@@ -5,7 +5,7 @@ import './body.html'
 
 
 pl = PlayerList
-console.log('Hello, Again?!');
+//console.log('Hello, Again?!');
 
 //Localize helpers and events to leaderboard
 //as opposed to the whole body
